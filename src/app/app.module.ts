@@ -8,11 +8,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchdonorComponent } from './searchdonor/searchdonor.component';
 import { DeletedonorComponent } from './deletedonor/deletedonor.component';
+import { ViewAllDonorsComponent } from './view-all-donors/view-all-donors.component';
 
 const appRoutes: Routes = [
   { path: '', component: AdddonorComponent },
   { path: 'searchdonor', component: SearchdonorComponent },
   { path: 'deletedonor', component: DeletedonorComponent },
+  { path: 'viewalldonors', component: ViewAllDonorsComponent },
   
 ]
 
@@ -22,7 +24,8 @@ const appRoutes: Routes = [
     AdddonorComponent,
     NavbarComponent,
     SearchdonorComponent,
-    DeletedonorComponent
+    DeletedonorComponent,
+    ViewAllDonorsComponent
   ],
   imports: [
     BrowserModule,
