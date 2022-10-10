@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdddonorComponent } from './adddonor/adddonor.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
   { path: '', component: AdddonorComponent },
@@ -13,7 +14,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AdddonorComponent
+    AdddonorComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
