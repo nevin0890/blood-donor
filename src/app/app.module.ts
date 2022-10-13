@@ -10,6 +10,7 @@ import { SearchdonorComponent } from './searchdonor/searchdonor.component';
 import { DeletedonorComponent } from './deletedonor/deletedonor.component';
 import { ViewAllDonorsComponent } from './view-all-donors/view-all-donors.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: AdddonorComponent },
@@ -26,13 +27,15 @@ const appRoutes: Routes = [
     NavbarComponent,
     SearchdonorComponent,
     DeletedonorComponent,
-    ViewAllDonorsComponent
+    ViewAllDonorsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

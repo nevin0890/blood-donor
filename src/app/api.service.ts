@@ -6,9 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class ApiService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    
+   }
   
-  getDonorsList() {
-    return this.http.get('https://jsonplaceholder.typicode.com/users');
-  }
+  getDonorsList=()=>{ return this.http.get("https://jsonplaceholder.typicode.com/users")} 
 }

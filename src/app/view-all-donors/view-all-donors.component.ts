@@ -8,7 +8,9 @@ import { ApiService } from '../api.service';
 })
 export class ViewAllDonorsComponent implements OnInit {
 
-  constructor(private api: ApiService) { }
+  constructor(private api: ApiService) { 
+    this.fetchDonors();
+  }
   
   fetchDonors=()=>{this.api.getDonorsList().subscribe((data)=>{this.donorData=data})}
 

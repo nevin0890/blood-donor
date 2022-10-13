@@ -1,10 +1,10 @@
 <div class="container-fluid">
     <div class="row g-3">
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <input type="name" placeholder="Enter name" class="form-control">
+            <input type="name" placeholder="Enter name" class="form-control" name="name " [ngModel]="name ">
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg4 col-xl4 col-xxl-4">
-            <select name="" id="" class="form-control">
+            <select name="" id="" class="form-control"name="bloodGroup " [ngModel]="bloodGroup ">
                 <option value="">select blood group</option>
                 <option value="">A+</option>
                 <option value="">A-</option>
@@ -16,34 +16,34 @@
         
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-            <input type="date" placeholder="Date Of Birth" class="form-control">
+            <input type="date" placeholder="Date Of Birth" class="form-control" name="dob " [ngModel]="dob ">
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
-            <input type="date" placeholder="Last Donation Date" class="form-control">
+            <input type="date" placeholder="Last Donation Date" class="form-control" name="lstdate " [ngModel]="lstdate ">
         </div>
        
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-            <input type="text" placeholder="previous diseases" class="form-control">
+            <input type="text" placeholder="previous diseases" class="form-control" name="prevdis " [ngModel]="prevdis ">
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-            <input type="date" placeholder="Last Vaccination Date" class="form-control">
+            <input type="date" placeholder="Last Vaccination Date" class="form-control" name="lasvacc " [ngModel]="lasvacc ">
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Address"></textarea>
+            <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Address" name="address " [ngModel]="address "></textarea>
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <input type="number" placeholder="Pincode" class="form-control">
+            <input type="number" placeholder="Pincode" class="form-control" name="pincode " [ngModel]="pincode ">
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl62">
-            <input type="number" placeholder="Mobile" class="form-control">
+            <input type="number" placeholder="Mobile" class="form-control" name="mobile  " [ngModel]="mobile  ">
         </div>
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-            <input type="email" placeholder=" Email" class="form-control">
+            <input type="email" placeholder=" Email" class="form-control" name="email  " [ngModel]="email  ">
         </div>
         
         <div class="col-col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class=" d-flex align-items-center justify-content-center">
-                <button class="btn btn-outline-primary">Submit</button>
+                <button class="btn btn-outline-primary"(click)="readvalues()">Submit</button>
             </div>
         </div>
     </div>
